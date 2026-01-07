@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Joshua King David personal brand website. Youth creator focused on media, tech, and community building." />
+  <meta name="keywords" content="Joshua King David, personal brand, youth creator, tech, media" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #0f172a, #020617);
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      color: #020617;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+    nav {
+      background: rgba(2,6,23,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      padding: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    nav a:hover {
+      color: #ffca28;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeIn 1.2s ease;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+    }
+    button {
+      background: linear-gradient(135deg, #6366f1, #22d3ee);
+      color: #020617;
+      border: none;
+      padding: 14px 26px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Joshua King David</h1>
+    <p>Personal Brand • Creator • Innovator</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero reveal" id="home">
+    <span class="badge">Youth • Creator • Innovator</span>
+    <h1>Building Ideas. Sharing Vision.</h1>
+    <p>I’m Joshua King David — a young creator focused on media, technology, and community growth.</p>
+    <br />
+    <button onclick="showAlert()">Work With Me</button>
+  </section>
+
+  <section class="section reveal" id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate young entrepreneur and digital creator based in Ghana. I focus on building media projects, tech communities, and meaningful brands that inspire young people.</p>
+  </section>
+
+  <section class="section reveal" id="services">
+    <h2>What I Do</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Personal Branding</h3>
+        <p>Helping individuals and creators grow a strong online identity.</p>
+      </div>
+      <div class="card">
+        <h3>Media & Content</h3>
+        <p>Short-form content, visuals, and social media strategy.</p>
+      </div>
+      <div class="card">
+        <h3>Tech & Community</h3>
+        <p>Building youth-focused tech projects and digital communities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="skills">
+    <h2>Skills & Tools</h2>
+    <div class="cards">
+      <div class="card">HTML • CSS • JavaScript</div>
+      <div class="card">Content Creation</div>
+      <div class="card">Social Media Strategy</div>
+      <div class="card">Community Building</div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="portfolio">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Personal Brand Website</h3>
+        <p>Youth-focused personal brand and portfolio website.</p>
+      </div>
+      <div class="card">
+        <h3>Media Pages</h3>
+        <p>Social media pages focused on news, branding, and storytelling.</p>
+      </div>
+      <div class="card">
+        <h3>Tech Community</h3>
+        <p>Online youth tech & creator community.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s collaborate and build something impactful.</p>
+    <form onsubmit="sendMessage(event)" style="max-width:500px;margin:auto;display:grid;gap:12px;">
+      <input type="text" placeholder="Your Name" required style="padding:12px;border-radius:8px;border:none;" />
+      <input type="email" placeholder="Your Email" required style="padding:12px;border-radius:8px;border:none;" />
+      <textarea placeholder="Your Message" required style="padding:12px;border-radius:8px;border:none;"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Connect with me</p>
+    <p>
+      <a href="#" style="color:#22d3ee;margin:0 8px;">Instagram</a> |
+      <a href="#" style="color:#22d3ee;margin:0 8px;">TikTok</a> |
+      <a href="#" style="color:#22d3ee;margin:0 8px;">X</a> |
+      <a href="#" style="color:#22d3ee;margin:0 8px;">LinkedIn</a>
+    </p>
+    <p>© 2026 Joshua King David</p>
+  </footer>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(34,211,238,0.15);
+      color: #22d3ee;
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+    } {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      reveals.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          section.classList.add('active');
+        }
+      });
+    });
+    function showAlert() {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function sendMessage(e) {
+      e.preventDefault();
+      alert('Thanks for reaching out! I will get back to you soon.');
+    }
+  </script>
+
+</body>
+</html>
