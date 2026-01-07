@@ -123,6 +123,36 @@
       h2 { font-size: 2.2rem; }
       p { font-size: 1.2rem; }
     }
+  .hero-images {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .hero-images img {
+      width: 160px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 20px;
+      animation: float 4s ease-in-out infinite;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    .hero-images img:nth-child(2) {
+      animation-delay: 1.5s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 3.6rem; }
+      .hero p { font-size: 1.45rem; }
+      .hero-images img { width: 140px; height: 200px; }
+    }
   </style>
 </head>
 <body>
@@ -141,10 +171,13 @@
 
   <section class="hero reveal" id="home">
     <span class="badge">Youth • Creator • Innovator</span>
-    <h1>Building Ideas. Sharing Vision.</h1>
-    <p>I’m Joshua King David — a young creator focused on media, technology, and community growth.</p>
-    <br />
-    <button onclick="showAlert()">Work With Me</button>
+    <h1>Building the Next Generation of Creators</h1>
+    <p>I design bold systems, platforms, and opportunities that connect teens with real-world tech, media, and innovation.</p>
+    <div class="hero-images">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Teens collaborating" />
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Tech workspace" />
+    </div>
+    <button onclick="showAlert()">Collaborate With Me</button>
   </section>
 
   <section class="section reveal" id="about">
