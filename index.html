@@ -54,9 +54,37 @@
       font-size: 1.3rem;
     }
     .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 0;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .full-card {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      text-align: center;
+      background: linear-gradient(135deg, #22d3ee, #6366f1, #ec4899);
+      animation: slideUp 1.2s ease;
+    }
+
+    .full-card h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .full-card p {
+      font-size: 1.4rem;
+      max-width: 800px;
+      line-height: 1.8;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .cards {
       display: grid;
@@ -170,67 +198,33 @@
   </nav>
 
   <section class="hero reveal" id="home">
-    <span class="badge">Youth • Creator • Innovator</span>
-    <h1>Building the Next Generation of Creators</h1>
-    <p>I design bold systems, platforms, and opportunities that connect teens with real-world tech, media, and innovation.</p>
+    <h1>Raising the Next Generation of Innovators</h1>
+    <p>Design • Technology • Youth Empowerment</p>
     <div class="hero-images">
+      <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Students learning in class" />
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" alt="AI tech environment" />
       <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Teens collaborating" />
-      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Tech workspace" />
-    </div>
-    <button onclick="showAlert()">Collaborate With Me</button>
-  </section>
-
-  <section class="section reveal" id="about">
-    <h2>About Me</h2>
-    <p>I am a creative designer based in Ghana, driven by a strong passion for innovation, collaboration, and youth empowerment. Through strategic design and forward-thinking initiatives, I create opportunities that connect teens with trusted companies, enabling meaningful collaborations that inspire growth, skills development, and real-world experience.</p>
-    <p>My work goes beyond design—I focus on building platforms and systems that nurture creativity, confidence, and leadership among young people. With an intensive and purpose-driven approach, I aim to bridge the gap between talent and opportunity, helping the next generation turn ideas into impact.</p>
-    <p><strong>My mission is clear:</strong> to build, empower, and raise a bright generation equipped with creativity, vision, and the right opportunities to succeed.</p>
-  </section>
-
-  <section class="section reveal" id="services">
-    <h2>What I Do</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Personal Branding</h3>
-        <p>Helping individuals and creators grow a strong online identity.</p>
-      </div>
-      <div class="card">
-        <h3>Media & Content</h3>
-        <p>Short-form content, visuals, and social media strategy.</p>
-      </div>
-      <div class="card">
-        <h3>Tech & Community</h3>
-        <p>Building youth-focused tech projects and digital communities.</p>
-      </div>
     </div>
   </section>
 
-  <section class="section reveal" id="skills">
-    <h2>Skills & Tools</h2>
-    <div class="cards">
-      <div class="card">HTML • CSS • JavaScript</div>
-      <div class="card">Content Creation</div>
-      <div class="card">Social Media Strategy</div>
-      <div class="card">Community Building</div>
-    </div>
+  <section class="full-card">
+    <h2>Empowering Youth Through Design</h2>
+    <p>I am a creative designer based in Ghana, driven by innovation, collaboration, and youth empowerment. I build platforms that connect teens with real opportunities in tech, media, and innovation.</p>
   </section>
 
-  <section class="section reveal" id="portfolio">
-    <h2>Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Personal Brand Website</h3>
-        <p>Youth-focused personal brand and portfolio website.</p>
-      </div>
-      <div class="card">
-        <h3>Media Pages</h3>
-        <p>Social media pages focused on news, branding, and storytelling.</p>
-      </div>
-      <div class="card">
-        <h3>Tech Community</h3>
-        <p>Online youth tech & creator community.</p>
-      </div>
-    </div>
+  <section class="full-card">
+    <h2>What I Build</h2>
+    <p>Bold systems, digital platforms, and creative initiatives that help young people gain skills, confidence, and real-world experience.</p>
+  </section>
+
+  <section class="full-card">
+    <h2>Skills & Focus</h2>
+    <p>Creative Design • Tech Innovation • Community Building • Youth Leadership • Opportunity Creation</p>
+  </section>
+
+  <section class="full-card">
+    <h2>Creating Opportunities Worldwide</h2>
+    <p>I collaborate with companies and organizations to create meaningful learning, tech exposure, and growth opportunities for teens across the world.</p>
   </section>
 
   <section class="section reveal" id="contact">
